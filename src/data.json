@@ -1,17 +1,26 @@
 {
     "items": {
         
-        "item_1": [
-            
-                "dol",
-                "ort",
-                "sol"
+        "Call to Arms": [
+            "amn",
+            "ral",
+            "mal",
+            "ist",
+            "ohm"
         ],
-        "item_2": [
-            
-                "sol",
-                "nef",
-                "tir"
+        "Rhyme": [
+            "shael",
+            "eth"
+    ],
+        "Enigma": [
+            "jah",
+            "ith",
+            "ber"
+    ],
+        "Delirium": [
+            "sol",
+            "nef",
+            "tir"
     ]
         
     }
