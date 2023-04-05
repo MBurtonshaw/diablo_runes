@@ -1,27 +1,41 @@
 {
-    "items": {
-        
-        "Call to Arms": [
-            "amn",
-            "ral",
-            "mal",
-            "ist",
-            "ohm"
-        ],
-        "Rhyme": [
-            "shael",
-            "eth"
-    ],
-        "Enigma": [
-            "jah",
-            "ith",
-            "ber"
-    ],
-        "Delirium": [
-            "sol",
-            "nef",
-            "tir"
+    "items": [
+        {
+            "name" : "Call to Arms",
+            "runes" : 
+                [
+                    "amn",
+                    "ral",
+                    "mal",
+                    "ist",
+                    "ohm"
+                ]
+        },
+        {
+            "name" : "Rhyme",
+            "runes" : 
+                [
+                    "shael",
+                    "eth"
+                ]
+        },
+        {
+            "name" : "Enigma",
+            "runes" :  
+                [
+                    "jah",
+                    "ith",
+                    "ber"
+                ]
+        },
+        {
+            "name" : "Delirium",
+            "runes" : 
+                    [
+                    "sol",
+                    "nef",
+                    "tir"
+                    ]
+        }
     ]
-        
-    }
 }

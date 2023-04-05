@@ -6,7 +6,7 @@ export default function Home() {
       return(
         <div id="home_container" className="container">
             <Runes />
-            <Items />
+           
         </div>
       );
 }
