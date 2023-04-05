@@ -26,6 +26,9 @@ export default function Runes() {
       const things_4 = items[3].name;
       const four_runes = items[3].runes.map((rune, i) => <p key={i}>{rune}</p>);
 
+      const things_5 = items[4].name;
+      const five_runes = items[4].runes.map((rune, i) => <p key={i}>{rune}</p>);
+
       return(
         <div className='container bg-dark'>
           <div className="card-group m-5 p-5">
@@ -51,6 +54,12 @@ export default function Runes() {
               <div className="card-body">
                 <h5 className="card-title pb-5">{things_4}</h5>
                 {four_runes}
+              </div>
+            </div>
+            <div className="card bg-light">
+              <div className="card-body">
+                <h5 className="card-title pb-5">{things_5}</h5>
+                {five_runes}
               </div>
             </div>
           </div>
