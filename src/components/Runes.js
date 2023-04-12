@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react';
 import data from '../data.json';
 
 export default function Runes() {
-    let item_info = data.items;
+    let item_info = data;
     
 
     let [ items, setItems ] = useState('loading items...');
@@ -12,66 +12,82 @@ export default function Runes() {
 
     useEffect( () => { getData() }, [ setItems ] );
    
-    if (items !== 'loading items...') {
-      
-      const things_1 = items[0].name;
-      const one_runes = items[0].runes.map((rune, i) => <p key={i} className='card-text'>{rune}</p>);
+    function loader() {
+      if (items !== 'loading items...') {
+        return(
+          <div id='rune_container' className='row'>
 
-      const things_2 = items[1].name;
-      const two_runes = items[1].runes.map((rune, i) => <p key={i}>{rune}</p>);
-
-      const things_3 = items[2].name;
-      const three_runes = items[2].runes.map((rune, i) => <p key={i}>{rune}</p>);
-
-      const things_4 = items[3].name;
-      const four_runes = items[3].runes.map((rune, i) => <p key={i}>{rune}</p>);
-
-      const things_5 = items[4].name;
-      const five_runes = items[4].runes.map((rune, i) => <p key={i}>{rune}</p>);
-
-      return(
-        <div className='container bg-dark'>
-          <div className="card-group m-5 p-5">
-            <div className="card bg-light">
-              <div className="card-body">
-                <h5 className="card-title pb-5">{things_1}</h5>
-                {one_runes}
+            <div id='sorceress_div' className='col pt-5'>
+              <h1>Sorceress</h1>
+              <div className='pt-3'>
+                <h4>Helm</h4>
+                {items.main.helm.name}
+              </div>
+              <div className='pt-3'>
+                <h4>Armor</h4>
+                {items.main.armor.name}
+              </div>
+              <div className='pt-3'>
+                <h4>Shield</h4>
+                {items.main.shield.name}
+                <p>({items.main.shield.runes[0]}, {items.main.shield.runes[1]}, {items.main.shield.runes[2]}, {items.main.shield.runes[3]})</p>
+              </div>
+              <div className='pt-3'>
+                <h4>Weapon</h4>
+                {items.main.weapon.name}
+                <p>({items.main.weapon.runes[0]}, {items.main.weapon.runes[1]}, {items.main.weapon.runes[2]}, {items.main.weapon.runes[3]})</p>
               </div>
             </div>
-            <div className="card bg-light">
-              <div className="card-body">
-                <h5 className="card-title pb-5">{things_2}</h5>
-                {two_runes}
+
+            <div id='rune_div' className='col pt-2'>
+              <h3>Total Runes</h3>
+              <p>tal x2</p>
+              <p>thul x2</p>
+              <p>sol x2</p>
+              <p>tir</p>
+              <p>el</p>
+              <p>io</p>
+              <p>ko</p>
+              <p>amn</p>
+              <p>dol</p>
+              <p>vex</p>
+              <p>pul</p>
+              <p>ort</p>
+              <p>ral</p>
+            </div>
+
+            <div id='mercenary_div' className='col pt-5'>
+              <h1>Mercenary (Act II)</h1>
+              <div className='pt-3'>
+                <h4>Helm</h4>
+                <p>{items.merc.helm.name[0]}</p>
+                <p>{items.merc.helm.name[1]}</p>
+                <p>{items.merc.helm.name[2]}</p>
+              </div>
+              <div className='pt-3'>
+                <h4>Armor</h4>
+                {items.merc.armor.name}
+                <p>({items.merc.armor.runes[0]}, {items.merc.armor.runes[1]}, {items.merc.armor.runes[2]}, {items.merc.armor.runes[3]})</p>
+              </div>
+              <div className='pt-3'>
+                <h4>Weapon</h4>
+                {items.merc.weapon.name}
+                <p>({items.merc.weapon.runes[0]}, {items.merc.weapon.runes[1]}, {items.merc.weapon.runes[2]}, {items.merc.weapon.runes[3]})</p>
               </div>
             </div>
-            <div className="card bg-light">
-              <div className="card-body bg-light">
-                <h5 className="card-title pb-5">{things_3}</h5>
-                {three_runes}
-              </div>
-            </div>
-            <div className="card bg-light">
-              <div className="card-body">
-                <h5 className="card-title pb-5">{things_4}</h5>
-                {four_runes}
-              </div>
-            </div>
-            <div className="card bg-light">
-              <div className="card-body">
-                <h5 className="card-title pb-5">{things_5}</h5>
-                {five_runes}
-              </div>
-            </div>
+
           </div>
-        </div>
-      );
-
-      
-      
-
+        );
+      } else {
+        return(<h1>'loading...'</h1>);
+      }
     }
     
-
+    return(
+      <div>
+        {loader()}
+      </div>
+    );
 
 
 

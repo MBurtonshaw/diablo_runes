@@ -1,51 +1,56 @@
 {
-    "items": [
-        {
-            "name" : "Call to Arms",
-            "runes" : 
-                [
-                    "amn",
-                    "ral",
-                    "mal",
-                    "ist",
-                    "ohm"
-                ]
+    "main" : {
+        "armor" : {
+            "name" : "Skin of the Vipermagi"
         },
-        {
-            "name" : "Rhyme",
-            "runes" : 
-                [
-                    "shael",
-                    "eth"
-                ]
+        "helm" : {
+            "name" : "Harlequinn Crest Shako"
         },
-        {
-            "name" : "Enigma",
-            "runes" :  
-                [
-                    "jah",
-                    "ith",
-                    "ber"
-                ]
+        "shield" : {
+            "name" : "Spirit",
+            "runes" : [
+                "tal",
+                "thul",
+                "ort",
+                "amn"
+            ]
         },
-        {
-            "name" : "Delirium",
-            "runes" : 
-                    [
-                    "sol",
-                    "nef",
-                    "tir"
-                    ]
-        },
-        {
-            "name" : "Passion",
-            "runes" : 
-                    [
-                    "dol",
-                    "ort",
-                    "eld",
-                    "lem"
-                    ]
+        "weapon" : {
+            "name" : "Heart of the Oak",
+            "runes" : [
+                "ko",
+                "vex",
+                "pul",
+                "thul"
+            ]
         }
-    ]
+    },
+    "merc" : {
+        "armor" : {
+            "name" : "Fortitude",
+            "runes" : [
+                "el",
+                "sol",
+                "dol",
+                "io"
+            ]
+        },
+        "helm" : {
+            "name" : [
+                "Andariel's Visage",
+                "Vampire's Gaze",
+                "Crown of Thieves",
+                "Tal Rasha's Horadric Crest"
+             ]
+        },
+        "weapon" : {
+            "name" : "Insight",
+            "runes" : [
+                "ral",
+                "tir",
+                "tal",
+                "sol"
+            ]
+        }
+    }
 }
